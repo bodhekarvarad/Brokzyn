@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "./Hero";
 import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
+import { Link } from "react-router-dom";
+import Universe from "./Universe";
 function ProductsPage() {
   return (
     <div>
@@ -15,7 +17,13 @@ function ProductsPage() {
         googlePlayLink=""
         appStoreLink=""
       />
-      <RightSection />
+
+      <RightSection
+        imageUrl="/media/images/console.png"
+        productName="console"
+        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        learnMore=""
+      />
       <LeftSection
         imageUrl="/media/images/coin.png"
         productName="coin"
@@ -25,7 +33,12 @@ function ProductsPage() {
         googlePlayLink=""
         appStoreLink=""
       />
-      <RightSection />
+      <RightSection
+        imageUrl="/media/images/kiteconnect.png"
+        productName="kiteconnect"
+        productDescription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
+        learnMore=""
+      />
       <LeftSection
         imageUrl="/media/images/varsity.png"
         productName="varsity"
@@ -35,6 +48,14 @@ function ProductsPage() {
         googlePlayLink=""
         appStoreLink=""
       />
+      <p className="text-center mt-5 mb-5 fs-5">
+        Want to know more about our technology stack? Check out the
+        <Link to="/blog" style={{ textDecoration: "none" }}>
+          Zerodha.tech
+        </Link>{" "}
+        blog.
+      </p>
+      <Universe />
     </div>
   );
 }
