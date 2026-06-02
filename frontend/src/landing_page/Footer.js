@@ -15,55 +15,124 @@ function Footer() {
           </div>
           <div className="col">
             <p>Company</p>
-            <a href="#"> About</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              About
+            </a>
             <br />
-            <a href="#"> Philosophy</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Philosophy
+            </a>
             <br />
-            <a href="#"> Press & media</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Press & media
+            </a>
             <br />
-            <a href="#"> Careers</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Careers
+            </a>
             <br />
-            <a href="#"> Zerodha Cares (CSR)</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Zerodha Cares (CSR)
+            </a>
             <br />
-            <a href="#"> Zerodha.tech</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Zerodha.tech
+            </a>
             <br />
-            <a href="#"> Open source</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Open source
+            </a>
             <br />
-            <a href="#"> Referral program</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Referral program
+            </a>
           </div>
           <div className="col">
             <p>Support</p>
-            <a href="#"> Contact us</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Contact us
+            </a>
             <br />
-            <a href="#"> Support portal</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Support portal
+            </a>
             <br />
-            <a href="#"> How to file a complaint?</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              How to file a complaint?
+            </a>
             <br />
-            <a href="#"> Status of your complaints</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Status of your complaints
+            </a>
             <br />
-            <a href="#"> Bulletin</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Bulletin
+            </a>
             <br />
-            <a href="#"> Circular</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Circular
+            </a>
             <br />
-            <a href="#"> Z-Connect blog</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Z-Connect blog
+            </a>
             <br />
-            <a href="#"> Downloads</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Downloads
+            </a>
           </div>
           <div className="col">
             <p>Account</p>
-            <a href="#"> Open demat account</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Open demat account
+            </a>
             <br />
-            <a href="#"> Minor demat account</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Minor demat account
+            </a>
             <br />
-            <a href="#"> NRI demat account</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              NRI demat account
+            </a>
             <br />
-            <a href="#"> HUF demat account</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              HUF demat account
+            </a>
             <br />
-            <a href="#"> Commodity</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Commodity
+            </a>
             <br />
-            <a href="#"> Dematerialisation</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Dematerialisation
+            </a>
             <br />
-            <a href="#"> Fund transfer MTF</a>
+            <a href="#" style={{ textDecoration: "none" }}>
+              {" "}
+              Fund transfer MTF
+            </a>
           </div>
         </div>
         <div className="mt-5  text-muted" style={{ fontSize: "14px" }}>
