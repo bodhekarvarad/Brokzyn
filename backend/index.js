@@ -2,11 +2,15 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 const PORT = process.env.PORT || 4444;
 const url = process.env.MONGO_URL;
 const { HoldingsModel } = require("./model/HoldingModel");
 const { PositionsModel } = require("./model/PositionsModel");
 
+app.use(cors());
+app.use(bodyParser.json());
 // app.get("/addHoldings", async (req, res) => {
 //   let tempHoldings = [
 //     {
@@ -176,6 +180,16 @@ const { PositionsModel } = require("./model/PositionsModel");
 
 //   res.send("Positions saved Done!");
 // });
+
+app.get("/allHoldings", async (req, res) => {
+  let allHoldings = await HoldingsModel.find({});
+  res.json(allHoldings);
+});
+app.get("/allPositions", async (req, res) => {
+  let allPositions = await PositionsModel.find({});
+  res.json(allPositions);
+});
+
 app.listen(4444, () => {
   console.log("app started");
   mongoose.connect(url);
