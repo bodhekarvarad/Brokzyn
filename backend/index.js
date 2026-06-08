@@ -201,8 +201,15 @@ app.post("/newOrder", async (req, res) => {
   res.send("order saved");
 });
 
-app.listen(4444, () => {
-  console.log("app started");
-  mongoose.connect(url);
-  console.log("dbconnected");
-});
+mongoose
+  .connect(url)
+  .then(() => {
+    console.log("MongoDB Connected");
+
+    app.listen(4444, () => {
+      console.log("Server running on port 4444");
+    });
+  })
+  .catch((err) => {
+    console.error("MongoDB Error:", err);
+  });
