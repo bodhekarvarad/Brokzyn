@@ -4,7 +4,7 @@ function OpenAccount() {
   return (
     <div className="container p-5 mt-5">
       <div className="row text-center">
-        <h3 clasName="mt-5 text-muted">Open a Zerodha account</h3>
+        <h3 clasName="mt-5 text-muted">Open a account</h3>
         <p className="text-muted mt-2 mb-3">
           Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and
           F&O trades.

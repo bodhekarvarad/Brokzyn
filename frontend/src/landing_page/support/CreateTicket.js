@@ -54,7 +54,7 @@ function CreateTicket() {
             style={{ lineHeight: "2" }}
             className="text-decoration-none"
           >
-            Charges at Zerodha
+            Charges at Brokzyn
           </a>{" "}
           <br />
           <a
@@ -62,7 +62,7 @@ function CreateTicket() {
             style={{ lineHeight: "2" }}
             className="text-decoration-none"
           >
-            Zerodha IDFC Bank
+            Brokzyn IDFC Bank
           </a>{" "}
           <br />
           <a
@@ -76,7 +76,7 @@ function CreateTicket() {
         <div className="col-4 p-5 mt-2 ">
           <h4 className="">
             <i class="fa-solid fa-circle-user"></i>
-            Your Zerodha
+            Your Brokzyn
           </h4>
           <a
             href="#"

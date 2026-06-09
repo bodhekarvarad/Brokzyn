@@ -11,7 +11,7 @@ function Footer() {
               style={{ width: "50%" }}
               alt="Logo"
             />
-            <p>&copy;2010 - 2026, Zerodha Broking Ltd. All rights reserved.</p>
+            <p>&copy;2010 - 2026,Brokzyn Broking Ltd. All rights reserved.</p>
           </div>
           <div className="col">
             <p>Company</p>
@@ -37,12 +37,12 @@ function Footer() {
             <br />
             <a href="#" style={{ textDecoration: "none" }}>
               {" "}
-              Zerodha Cares (CSR)
+              Brokzyn Cares (CSR)
             </a>
             <br />
             <a href="#" style={{ textDecoration: "none" }}>
               {" "}
-              Zerodha.tech
+              Brokzyn.tech
             </a>
             <br />
             <a href="#" style={{ textDecoration: "none" }}>
@@ -137,15 +137,15 @@ function Footer() {
         </div>
         <div className="mt-5  text-muted" style={{ fontSize: "14px" }}>
           <p>
-            Zerodha Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI
+            Brokzyn Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI
             Registration no.: INZ000031633 CDSL/NSDL: Depository services
-            through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019
-            Registered Address: Zerodha Broking Ltd., #153/154, 4th Cross,
+            through Brokzyn Broking Ltd. – SEBI Registration no.: IN-DP-431-2019
+            Registered Address: Brokzyn Broking Ltd., #153/154, 4th Cross,
             Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th Phase,
             Bengaluru - 560078, Karnataka, India. For any complaints pertaining
-            to securities broking please write to complaints@zerodha.com, for DP
-            related to dp@zerodha.com. Please ensure you carefully read the Risk
-            Disclosure Document as prescribed by SEBI | ICF
+            to securities broking please write to complaints@ Brokzyn.com, for
+            DP related to dp@ Brokzyn.com. Please ensure you carefully read the
+            Risk Disclosure Document as prescribed by SEBI | ICF
           </p>
           <p>
             Procedure to file a complaint on SEBI SCORES: Register on SCORES
@@ -179,7 +179,7 @@ function Footer() {
             make payment in case of allotment. In case of non allotment the
             funds will remain in your bank account. As a business we don't give
             stock tips, and have not authorized anyone to trade on behalf of
-            others. If you find anyone claiming to be part of Zerodha and
+            others. If you find anyone claiming to be part of Brokzyn and
             offering such services, please create a ticket here.
           </p>
         </div>

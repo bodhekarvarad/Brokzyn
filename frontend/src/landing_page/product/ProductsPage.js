@@ -21,7 +21,7 @@ function ProductsPage() {
       <RightSection
         imageUrl="/media/images/console.png"
         productName="console"
-        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        productDescription="The central dashboard for your  Brokzyn account. Gain insights into your trades and investments with in-depth reports and visualisations."
         learnMore=""
       />
       <LeftSection
@@ -51,7 +51,7 @@ function ProductsPage() {
       <p className="text-center mt-5 mb-5 fs-5">
         Want to know more about our technology stack? Check out the
         <Link to="/blog" style={{ textDecoration: "none" }}>
-          Zerodha.tech
+          Brokzyn.tech
         </Link>{" "}
         blog.
       </p>
