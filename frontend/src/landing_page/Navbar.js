@@ -10,7 +10,7 @@ function Navbar() {
         <Link class="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
-            style={{ width: "30%" }}
+            style={{ width: "10rem" }}
             alt="Logo"
           />
         </Link>
@@ -26,7 +26,7 @@ function Navbar() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex" role="search">
+          <form class="d-flex" role="search" style={{ marginLeft: "30rem" }}>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <Link class="nav-link active" aria-current="page" to="/signup">

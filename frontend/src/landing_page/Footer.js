@@ -137,17 +137,6 @@ function Footer() {
         </div>
         <div className="mt-5  text-muted" style={{ fontSize: "14px" }}>
           <p>
-            Brokzyn Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI
-            Registration no.: INZ000031633 CDSL/NSDL: Depository services
-            through Brokzyn Broking Ltd. – SEBI Registration no.: IN-DP-431-2019
-            Registered Address: Brokzyn Broking Ltd., #153/154, 4th Cross,
-            Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th Phase,
-            Bengaluru - 560078, Karnataka, India. For any complaints pertaining
-            to securities broking please write to complaints@ Brokzyn.com, for
-            DP related to dp@ Brokzyn.com. Please ensure you carefully read the
-            Risk Disclosure Document as prescribed by SEBI | ICF
-          </p>
-          <p>
             Procedure to file a complaint on SEBI SCORES: Register on SCORES
             portal. Mandatory details for filing complaints on SCORES: Name,
             PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
