@@ -1,6 +1,6 @@
 # Brokzyn 📈
 
-A full-stack trading dashboard, built with the MERN stack. The platform provides real-time market data visualization, secure user authentication, and a modern responsive interface powered by Material UI.
+A full-stack trading dashboard, built with the MERN stack. The platform provides real-time market data visualization and a modern responsive interface powered by Material UI.
 
 ## 🚀 Features
 
