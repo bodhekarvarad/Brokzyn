@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" width="360" height="100">
+
+  <!-- White background version -->
+  <rect width="360" height="100" fill="#ffffff"/>
+
+  <!-- Icon: Minimal geometric upward arrow / B mark -->
+  <g transform="translate(20, 18)">
+    <!-- Clean Z-shaped chart path as icon -->
+    <polyline points="0,50 0,10 18,10" fill="none" stroke="#387ED1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="4,30 18,10 18,50" fill="none" stroke="#387ED1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Dot at peak -->
+    <circle cx="18" cy="10" r="4" fill="#387ED1"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="65" y="62" 
+    font-family="'Helvetica Neue', 'Arial', sans-serif" 
+    font-size="36" 
+    font-weight="700" 
+    fill="#387ED1"
+    letter-spacing="-0.5">Brokzyn</text>
+
+  <!-- Tagline -->
+  <text x="66" y="80" 
+    font-family="'Helvetica Neue', 'Arial', sans-serif" 
+    font-size="10.5" 
+    font-weight="400"
+    fill="#888888"
+    letter-spacing="2.5">STOCK BROKING</text>
+
+</svg>
