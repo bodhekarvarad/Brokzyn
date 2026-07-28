@@ -16,20 +16,49 @@ export default function Auth_Form() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit=(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (isSignup) {
-      console.log({
-        name,
-        username,
-        password,
-      });
-    } else {
-      console.log({
-        username,
-        password,
-      });
+    try {
+      if (isSignup) {
+        const res = await axios.post(
+          "http://localhost:4444/api/v1/users/register",
+          {
+            name,
+            username,
+            password,
+          }
+        );
+
+        alert(res.data.message);
+
+        setIsSignup(false);
+
+        setName("");
+        setUsername("");
+        setPassword("");
+      } else {
+        const res = await axios.post(
+          "http://localhost:4444/api/v1/users/login",
+          {
+            username,
+            password,
+          }
+        );
+
+
+        alert(res.data.message);
+
+        localStorage.setItem("token", res.data.token);
+        //dashboard 
+        window.location.href = " http://localhost:5174/";
+
+       
+      }
+    } catch (err) {
+      console.error(err);
+
+      alert(err.response?.data?.message || "Something went wrong");
     }
   };
 
@@ -80,7 +109,7 @@ export default function Auth_Form() {
           )}
 
           <TextField
-            label="Username / Email"
+            label="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             fullWidth
