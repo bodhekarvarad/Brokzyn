@@ -51,7 +51,7 @@ export default function Auth_Form() {
 
         localStorage.setItem("token", res.data.token);
         //dashboard 
-       window.location.href = "https://brokzyn-dashboard.vercel.app";
+       window.location.href = "https://brokzyn-5m8b.vercel.app/";
 
        
       }
