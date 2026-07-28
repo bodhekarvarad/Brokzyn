@@ -22,7 +22,7 @@ export default function Auth_Form() {
     try {
       if (isSignup) {
         const res = await axios.post(
-          "http://localhost:4444/api/v1/users/register",
+          "https://brokzyn.onrender.com/api/v1/users/register",
           {
             name,
             username,
@@ -39,7 +39,7 @@ export default function Auth_Form() {
         setPassword("");
       } else {
         const res = await axios.post(
-          "http://localhost:4444/api/v1/users/login",
+          "https://brokzyn.onrender.com/api/v1/users/login",
           {
             username,
             password,
