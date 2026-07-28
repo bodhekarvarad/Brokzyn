@@ -1,17 +1,23 @@
 const express = require("express");
 const app = express();
+
 require("dotenv").config();
+
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
 const cors = require("cors");
+
 const PORT = process.env.PORT || 4444;
 const url = process.env.MONGO_URL;
+
 const { HoldingsModel } = require("./model/HoldingModel");
 const { PositionsModel } = require("./model/PositionsModel");
 const { OrdersModel } = require("./model/OrdersModel");
+const userRoutes = require("./routes/authRoutes");
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
+
+app.use("/api/v1/users", userRoutes);
 // app.get("/addHoldings", async (req, res) => {
 //   let tempHoldings = [
 //     {

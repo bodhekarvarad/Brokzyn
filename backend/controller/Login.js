@@ -1,27 +1,33 @@
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import { User } from "./models/User.js";
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const { User } = require("../model/User");
+const dotenv = require("dotenv");
+
 dotenv.config();
 
-export const login = async (req, res) => {
+const login = async (req, res) => {
   try {
     const { username, password } = req.body;
 
     if (!username || !password) {
       return res.status(400).json({
-        message: "All fields required",
+        message: "All fields are required",
       });
     }
+
     const user = await User.findOne({ username });
+
     if (!user) {
       return res.status(404).json({
         message: "User not found",
       });
     }
 
+    const isMatch = await bcrypt.compare(password, user.password);
+
     if (!isMatch) {
       return res.status(401).json({
-        message: "Invaild Password",
+        message: "Invalid password",
       });
     }
 
@@ -35,13 +41,18 @@ export const login = async (req, res) => {
         expiresIn: process.env.JWT_EXPIRE,
       },
     );
+
     res.status(200).json({
-      message: "Login Successful",
+      message: "Login successful",
       token,
     });
   } catch (err) {
+    console.error(err);
+
     res.status(500).json({
       message: "Server Error",
     });
   }
 };
+
+module.exports = { login };

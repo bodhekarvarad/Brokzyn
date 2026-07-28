@@ -1,8 +1,8 @@
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import { User } from "./models/User";
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const { User } = require("../model/User");
 
-export const register = async (req, res) => {
+const register = async (req, res) => {
   try {
     const { name, username, password } = req.body;
     if (!name || !username || !password) {
@@ -34,3 +34,4 @@ export const register = async (req, res) => {
     });
   }
 };
+module.exports = { register };
