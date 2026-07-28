@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import Auth_Form from "../signup/Auth_Form";
 function Hero() {
   return (
     <div className="container p-5 mb-5">
@@ -15,12 +16,14 @@ function Hero() {
           Online platform to invest in stocks, derivatives, mutual funds, ETFs,
           bonds, and more.
         </p>
+        <Link to='/signup'>
         <button
           className="p-2 btn btn-primary fs-5 mb-5"
           style={{ width: "20%", margin: "auto" }}
         >
           Signup Now
-        </button>
+        </button></Link>
+        
       </div>
     </div>
   );
