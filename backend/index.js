@@ -187,7 +187,9 @@ app.use("/api/v1/users", userRoutes);
 
 //   res.send("Positions saved Done!");
 // });
-
+app.get("/", (req, res) => {
+  res.send("Brokzyn Backend API is running 🚀");
+});
 app.get("/allHoldings", async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
   res.json(allHoldings);
